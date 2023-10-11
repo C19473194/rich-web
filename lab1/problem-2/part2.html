@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Note-taking App</title>
+     <link rel="stylesheet" href="part2.css">
+</head>
+<body>
+    <h1>Quick Notes</h1>
+	 <script src="part2.js"></script>
+    
+    <!-- Color selection dropdown -->
+    <label for="colorSelect">Select Note Color:</label>
+    <select id="colorSelect">
+        <option value="yellow">Yellow</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="pink">Pink</option>
+        <option value="purple">Purple</option>
+    </select>
+    
+    <!-- Input field to add a new note -->
+    <div>
+        <textarea id="newNote" placeholder="Add a new note"></textarea>
+        <button onclick="addNote()">Add Note</button>
+    </div>
+    
+    <!-- Displaying existing notes -->
+    <div id="noteContainer"></div>
+    
+    <script>
+        // Function to add a new note
+       addNote()
+        // Function to edit a new note
+        editNote(button)   
+        // Function to delete a note
+        deleteNote(button) 
+    </script>
+</body>
+</html>
