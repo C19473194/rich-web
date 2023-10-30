@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSONPlaceholder API Test</title>
+</head>
+<body>
+	<p>Please go to develper tools to see the displayed results using console.log().</p>
+    <script>
+        // Place the JavaScript code here
+        const apiUrl = 'http://jsonplaceholder.typicode.com';
+
+        // Fetch the posts data
+        fetch(`${apiUrl}/posts`)
+            .then(response => response.json())
+            .then(posts => {
+                // Problem 1: List all post titles with more than six words
+                const postTitlesWithMoreThanSixWords = posts
+                    .filter(post => post.title.split(' ').length > 6)
+                    .map(post => post.title);
+
+                console.log("Post titles with more than six words:");
+                console.log(postTitlesWithMoreThanSixWords);
+
+                // Problem 2: Show a word frequency map for all post body contents
+                const postBodies = posts.map(post => post.body);
+                const wordFrequencyMap = postBodies
+                    .join(' ') // Combine all post bodies into one string
+                    .split(/\s+/) // Split the string into words
+                    .map(word => word.toLowerCase()) // Convert words to lowercase
+                    .reduce((map, word) => {
+                        map[word] = (map[word] || 0) + 1;
+                        return map;
+                    }, {}); // Calculate word frequencies using reduce
+
+                console.log("Word frequency map for post body contents:");
+                console.log(wordFrequencyMap);
+            })
+            .catch(error => console.error("An error occurred:", error));
+    </script>
+</body>
+</html>

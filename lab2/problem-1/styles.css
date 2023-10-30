@@ -1,0 +1,68 @@
+/* styles.css */
+
+h1,h2 {
+    text-align: center;
+}
+
+#contact-form {
+    border: 2px solid #124e59;
+    padding : 20px 5px;
+    margin: 20px auto; /* Center the box horizontally */
+    border-radius: 5px;
+    text-align: center;
+    background-color: #9acfd9;
+    max-width: 700px; /* Limit the width of the box */
+}
+
+#contact-form input, #contact-form button {
+    display: inline-block; /* Display input fields and button in the same row */
+    margin: 5px; /* Add spacing between fields and the button */
+}
+
+#contact-form input {
+    padding: 5px;
+    width: auto; /* Let the input fields grow as needed */
+}
+
+#contact-form button {
+    background-color: #ffff;
+    color: black;
+    border: none;
+    padding: 5px ;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    color: #124e59 ;
+}
+
+#search-container {
+    text-align: center;
+    margin: 20px auto; /* Center the search field horizontally */
+    max-width: 400px; /* Limit the width of the search field */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto; /* Center the table horizontally */
+    max-width: 600px; /* Limit the width of the table */
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    cursor: pointer;
+}
+
+#noResult {
+    text-align: center;
+    margin: 10px;
+	color: red;
+    display: none;
+}
+#error {
+    color: red;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phone Directory</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	
+
+</head>
+<body>
+    <h1>Phone Directory</h1>
+	<script src="phone-directory.js"></script>
+    <div id="contact-form">
+        <input type="text" id="name" placeholder="Contact Name" required>
+        <input type="text" id="mobile" placeholder="Mobile Number" required>
+        <input type="text" id="email" placeholder="Email" required>
+        <button onclick="addContact()">Add Contact</button>
+		<div id="error"></div>
+    </div>
+    <div id="search-container">
+        <input type="text" id="search" onkeyup="filterContacts()" placeholder="Search by Phone Number">
+    </div>
+	<h2>Contacts summary</h2>
+    <table>
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Name</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="contactList">
+        </tbody>
+    </table>
+	<div id="noResult">No results found</div>
+
+    
+</body>
+</html>

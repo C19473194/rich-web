@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="q3.css">
+    <title>Github User Info</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="username-input" placeholder="Enter a Github username">
+            <button id="search-button">Search</button>
+        </div>
+        <div class="profile">
+            <div class="user-info">
+				<h4>User Profile:</h4>
+                <img id="avatar" src="" alt="Avatar">
+                <p id="name"></p>
+                <p id="username"></p>
+                <p id="email"></p>
+                <p id="location"></p>
+                <p id="gists"></p>
+            </div>
+            <div class="repositories">
+                <h4>User Repos:</h4>
+                <ul id="repos"></ul> <!-- Updated the ID to 'repos' -->
+            </div>
+        </div>
+    </div>
+    <script src="q3.js"></script>
+</body>
+</html>
