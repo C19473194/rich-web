@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    color: #61dafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.timer-container {
+    text-align: center;
+}
+
+.timer-inputs {
+    margin-bottom: 20px;
+}
+
+
+.timer-inputs input {
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+    background-color: #282c34;
+    color: #61dafb;
+    border: 1px solid #61dafb;
+    border-radius: 3px;
+    font-size: 18px;
+}
+#startBtn {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+	
+}
+
+#startBtn:hover {
+    background-color: #4285f4;
+}
+
+.countdown-display {
+    font-size: 36px;
+	font-weight: bold;
+}
+
+#hours,
+#minutes {
+    height: 30px; 
+}
+
+.timer-inputs .separator {
+    color: #61dafb;
+    font-size: 20px;
+    margin-right: 5px;
+}
+

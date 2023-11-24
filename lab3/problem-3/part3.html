@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Note-taking App</title>
+  <link rel="stylesheet" href="part3.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.5.3/rxjs.umd.min.js"></script>
+
+</head>
+
+<body>
+  <script src="part3.js"></script>
+  <h1>Quick Notes</h1>
+
+  <!-- Color selection dropdown -->
+  <label for="colorSelect">Select Note Color:</label>
+  <select id="colorSelect">
+    <option value="yellow">Yellow</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+    <option value="pink">Pink</option>
+    <option value="purple">Purple</option>
+  </select>
+
+  <!-- Input field to add a new note -->
+  <div>
+    <textarea id="newNote" placeholder="Add a new note"></textarea>
+    <button id="addNoteBtn">Add Note</button>
+  </div>
+
+  <!-- Displaying existing notes -->
+  <div id="noteContainer"></div>
+
+</body>
+
+</html>

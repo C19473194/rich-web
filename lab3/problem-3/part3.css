@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#colorSelect {
+    margin-bottom: 20px;
+}
+
+#newNote {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.note {
+    border: 2px solid #333;
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.note.child {
+    border: 2px dashed #aaa;
+    margin: 10px 10px;
+    padding: 13px;
+}
+.note.parent {
+    border: 2px solid #3498db;
+}
+
+.note textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+select {
+    margin: 10px;
+}
+
+label[for="colorSelect"] {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    color: #555;
+}
+
+#colorSelect {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button.editBtn {
+    background-color: #3498db;
+}
+
+button.editBtn:hover {
+    background-color: #2980b9;
+}
+
+button.addChildBtn {
+    background-color: #9b59b6;
+}
+
+button.addChildBtn:hover {
+    background-color: #8e44ad;
+}
+
+button.deleteBtn {
+    background-color: #e74c3c;
+}
+
+button.deleteBtn:hover {
+    background-color: #c0392b;
+}

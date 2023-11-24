@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.5.3/rxjs.umd.min.js"></script>
+
+	
+    <script src="app.js"></script>
+     <div class="timer-container">
+    
+        <div class="timer-inputs">
+            
+            <input type="text" id="hours" placeholder="h" pattern="\d*" inputmode="numeric">
+            <span class="separator">:</span>
+            <input type="text" id="minutes" placeholder="m" pattern="\d*" inputmode="numeric">
+            <span class="separator">:</span>
+            <input type="text" id="seconds" placeholder="s" pattern="\d*" inputmode="numeric">
+            
+        </div>
+		<button id="startBtn">START COUNTDOWN</button>
+        <div class="countdown-display">
+            <p id="countdown">00:00:00</p>
+        </div>
+    </div>
+
+   
+</body>
+</html>
